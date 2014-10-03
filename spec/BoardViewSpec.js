@@ -9,7 +9,7 @@ describe('ChessboardView', function() {
     expect(view).to.be.ok;
   });
 
-  // This function uses a board visualizer lets you view an interactive version of any piece matrix.
+  //also render board on dom as visual test
   var displayBoard = function(matrix){
     $('#sandbox').html(
       new BoardView({
@@ -18,7 +18,6 @@ describe('ChessboardView', function() {
     );
   };
   $(function(){
-    // this is a pre-baked solution for n-queens in the n = 4 case, rendered to the screen using our handy visualizer.
     displayBoard([
       [0, 1, 0, 0],
       [0, 0, 0, 1],
