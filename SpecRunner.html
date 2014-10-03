@@ -27,11 +27,33 @@
     <script src="src/solvers.js"></script>
 
     <!-- tests -->
+    <style type="text/css">
+      .square {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+      }
+
+      .positive {
+        background-color: lightgrey;
+      }
+
+      .negative {
+        background-color: grey;
+      }
+
+      .inConflict{
+          background-color: red;
+      }
+    </style>
     <script src="spec/BoardSpec.js"></script>
     <script src="spec/BoardViewSpec.js"></script>
     <script src="spec/solversSpec.js"></script>
   </head>
   <body>
+    <h3>Sandbox</h3>
+    <div id='sandbox'></div>
+    <h3>Tests</h3>
     <div id="mocha"></div>
   </body>
 </html>
